@@ -120,7 +120,7 @@ $(function() {
   });
    $('#mod').click(function() {
     if (notLastOp()) {
-      var outputText = $('#output').text() + 'mod';
+      var outputText = $('#output').text() + '%';
       $('#output').text(outputText);
     }
   });
