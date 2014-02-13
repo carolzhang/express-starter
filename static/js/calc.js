@@ -26,17 +26,25 @@ $(function() {
       outputText = '2';
     }
     // FIXME
-    $('#output').text('haha');
+    $('#output').text(outputText);
   });
 
   $('#three').click(function() {
     var outputText = $('#output').text() + '3';
+    if (outputText === '02') {
+      outputText = '2';
+    }
     // FIXME
     $('#output').text(outputText);
   });
 
   $('#four').click(function() {
     // FIXME
+    var outputText = $('#output').text90 + '4';
+    if (outputText === '03'){
+      outputText = '2';
+    }
+    $('#output').text(outputText);
   });
 
   // WRITE CODE HERE for buttons 5-9
@@ -48,6 +56,30 @@ $(function() {
     }
   });
 
+   $('#sub').click(function() {
+    if (notLastOp()) {
+      var outputText = $('#output').text() + '-';
+      $('#output').text(outputText);
+    }
+  });
+ $('#mul').click(function() {
+    if (notLastOp()) {
+      var outputText = $('#output').text() + '*';
+      $('#output').text(outputText);
+    }
+  });
+  $('#div').click(function() {
+    if (notLastOp()) {
+      var outputText = $('#output').text() + '/';
+      $('#output').text(outputText);
+    }
+  });
+   $('#mod').click(function() {
+    if (notLastOp()) {
+      var outputText = $('#output').text() + 'mod';
+      $('#output').text(outputText);
+    }
+  });
   // WRITE CODE HERE for sub,mul,div,mod
 
   $('#sqrt').click(function() {
