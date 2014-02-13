@@ -31,8 +31,8 @@ $(function() {
 
   $('#three').click(function() {
     var outputText = $('#output').text() + '3';
-    if (outputText === '02') {
-      outputText = '2';
+    if (outputText === '03') {
+      outputText = '3';
     }
     // FIXME
     $('#output').text(outputText);
@@ -40,13 +40,57 @@ $(function() {
 
   $('#four').click(function() {
     // FIXME
-    var outputText = $('#output').text90 + '4';
-    if (outputText === '03'){
-      outputText = '2';
+    var outputText = $('#output').text() + '4';
+    if (outputText === '04'){
+      outputText = '4';
     }
     $('#output').text(outputText);
   });
 
+   $('#five').click(function() {
+    // FIXME
+    var outputText = $('#output').text() + '5';
+    if (outputText === '05'){
+      outputText = '5';
+    }
+    $('#output').text(outputText);
+  });
+
+    $('#six').click(function() {
+    // FIXME
+    var outputText = $('#output').text() + '6';
+    if (outputText === '06'){
+      outputText = '6';
+    }
+    $('#output').text(outputText);
+  });
+
+     $('#seven').click(function() {
+    // FIXME
+    var outputText = $('#output').text() + '7';
+    if (outputText === '07'){
+      outputText = '7';
+    }
+    $('#output').text(outputText);
+  });
+
+ $('#eight').click(function() {
+    // FIXME
+    var outputText = $('#output').text() + '8';
+    if (outputText === '08'){
+      outputText = '8';
+    }
+    $('#output').text(outputText);
+  });
+
+  $('#nine').click(function() {
+    // FIXME
+    var outputText = $('#output').text() + '9';
+    if (outputText === '09'){
+      outputText = '9';
+    }
+    $('#output').text(outputText);
+  });
   // WRITE CODE HERE for buttons 5-9
 
   $('#add').click(function() {
@@ -93,13 +137,13 @@ $(function() {
     var outputText = $('#output').text();
     var outputNum = parseFloat(eval(outputText));
     // FIXME
-    var newNum = Math.sqrt(outputNum);
+    var newNum = (outputNum*outputNum);
     $('#output').text(newNum);
   });
 
   $('#equals').click(function() {
     // FIXME
-    var res = eval('4*10+7');
+    var res = eval(outputText);
     $('#output').text(res);
   });
 
